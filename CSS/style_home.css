@@ -1,0 +1,332 @@
+ @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+
+
+ body {
+     margin: 0 auto;
+ }
+
+ /* INICIO DO HEADER */
+ header {
+     background-color: rgb(0, 202, 209);
+     height: 64px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 10;
+ }
+
+ .conteudo-cabecario {
+     margin: 0 auto;
+     max-width: 1024px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .logo img {
+     width: 130px;
+     padding-left: 20px;
+ }
+
+ .links-topo {
+     margin-left: 15px;
+     padding: 10px;
+ }
+
+ .links-topo a {
+     color: white;
+     text-decoration: none;
+     padding-right: 15px;
+ }
+
+ .links-topo a:hover {
+     color: gray;
+ }
+
+ /* FIM DO HEADER */
+
+ /* INICIO DO MAIN */
+ main {
+     top: 0px;
+     left: 0px;
+ }
+
+ .bg-principal img {
+     padding-top: 60px;
+     margin: 0 auto;
+     width: 100%;
+ }
+
+ .bg-principal figure {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     display: inline-block;
+ }
+
+ .bg-principal figcaption {
+     position: absolute;
+     top: 40%;
+     text-align: left;
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 40px;
+     z-index: 1;
+ }
+
+ #sobre {
+     max-width: 1024px;
+     margin: 0 auto;
+     width: 100%;
+ }
+
+ .cabecario-sobre, .cabecario-sobre2, #contato {
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 15px;
+     color: gray;
+ }
+
+ .cabecario-sobre h3 {
+     padding-bottom: 20px;
+     font-size: 25px;
+ }
+
+ .cabecario-sobre p, .cabecario-sobre2 p {
+     margin: 0 auto;
+     max-width: 60%;
+     text-align: center;
+ }
+
+ .conteudo-sobre {
+     margin: 0 auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding-bottom: 40px;
+
+ }
+
+ .conteudo-sobre figure {
+     width: 50%;
+     float: left;
+ }
+
+ .conteudo-sobre div {
+     width: 100%;
+     padding-top: 50px;
+     padding-left: 0px;
+ }
+
+ .conteudo-sobre div h3 {
+     margin-left: -70px;
+     margin-bottom: 20px;
+     font-size: 18px;
+     color: gray;
+     font-weight: 400;
+ }
+
+ .conteudo-sobre div ul {
+     margin-left: -30px;
+     color: gray;
+ }
+
+ .conteudo-sobre div ul li {
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+ .cabecario-sobre2 h3 {
+     font-size: 18px;
+     padding-bottom: 15px;
+ }
+
+ .cabecario-sobre2 p {
+     padding-bottom: 20px;
+     font-weight: 400;
+ }
+
+ .tipos-medicos {
+     display: flex;
+     flex-flow: row nowrap;
+     margin-left: 30px;
+ }
+
+ .tipos-medicos figure {
+
+     margin-right: 3%;
+     margin-bottom: 20px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .tipos-medicos img {
+     width: 300px;
+ }
+
+ .tipos-medicos figcaption {
+     text-transform: uppercase;
+     color: gray;
+     text-align: center;
+     margin: 0 auto;
+
+ }
+
+ .horario {
+     padding: 40px 0px;
+     text-align: center;
+     margin-left: -20px;
+
+ }
+
+ #sobre div a:last-of-type {
+     text-decoration: none;
+     text-transform: uppercase;
+     color: white;
+     background-color: rgb(0, 202, 209);
+     padding: 8px 14px;
+
+ }
+
+ #contato h3 {
+     padding-bottom: 10px;
+
+ }
+
+ #contato p {
+     padding: 8px 0px;
+ }
+
+ /* FIM DO MAIN */
+
+ /* INICIO DO FOOTER */
+
+ footer {
+     background-color: hsl(182, 79%, 25%);
+     height: 30vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .rodape img {
+     width: 120px;
+     padding-bottom: 10px;
+ }
+
+ .rodape p {
+     color: white;
+     padding-bottom: 12px;
+     font-weight: 400;
+     font-size: 17px
+ }
+
+ /* FIM DO FOOTER */
+
+ @media (min-width: 1025px) {
+
+     /* INICIO DO MAIN */
+     .bg-principal img {
+         height: 500px;
+     }
+ }
+
+ @media (max-width: 1024px) {
+
+     /* INICIO DO MAIN */
+     .bg-principal img {
+         max-height: 100vh;
+     }
+
+
+     /* FIM DO MAIN */
+ }
+
+ @media (max-width: 768px) {
+
+     /* INICIO DO MAIN */
+     .bg-principal img {
+         max-height: 100vh;
+     }
+
+     .conteudo-sobre figure {
+         display: none;
+     }
+
+     .conteudo-sobre div {
+         text-align: center;
+     }
+
+     .conteudo-sobre div h3 {
+         margin-left: 0px;
+
+     }
+
+     .conteudo-sobre div ul {
+         margin-left: 0px;
+         color: gray;
+     }
+
+     .tipos-medicos {
+         margin-left: calc(100% /4);
+         flex-wrap: wrap;
+     }
+
+     /* FIM DO MAIN */
+ }
+
+ @media (max-width: 425px) {
+
+     /* INICIO DO HEADER */
+     header {
+         height: 94px;
+     }
+
+     .conteudo-cabecario {
+         flex-direction: column;
+     }
+
+     .logo img {
+         width: 100px;
+         padding-left: 20px;
+         border-bottom: 1px solid gray;
+         padding: 0px 120px;
+     }
+
+     .links-topo {
+         font-size: 12px;
+     }
+
+     .links-topo a {
+         padding-right: 30px;
+         padding-left: 25px;
+     }
+
+     /* FIM DO HEADER */
+
+     /* INICIO DO MAIN */
+     .bg-principal img {
+         max-height: 30vh;
+     }
+
+     .bg-principal figcaption {
+         left: 10px;
+         top: 60%;
+         font-size: 12px;
+     }
+
+     .tipos-medicos {
+         margin-left: calc(100% /8);
+     }
+
+     /* FIM DO MAIN */
+
+ }

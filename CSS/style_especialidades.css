@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.especialidades-nav {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.especialidades-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    margin-right: 20px;
+    border-bottom: 2px solid hsl(182, 100%, 41%);
+}
+
+.especialidades-nav a:hover {
+    color: hsl(182, 79%, 25%);
+}
+
+.especialidades-nav h2 {
+    color: gray;
+    padding: 35px 0px;
+}
+
+h3 {
+    padding-top: 25px;
+}
+
+#ortopedia div:first-of-type, #pediatria div:first-of-type, #geriatria div:first-of-type, #psicologia div:first-of-type, #fisioterapia div:first-of-type {
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
+
+#ortopedia div p:first-of-type, #pediatria div p:first-of-type, #geriatria div p:first-of-type, #psicologia div p:first-of-type, #fisioterapia div p:first-of-type {
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    max-width: 60%;
+    text-align: center;
+}
+
+#ortopedia div:last-of-type, #pediatria div:last-of-type, #geriatria div:last-of-type, #psicologia div:last-of-type, #fisioterapia div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+#ortopedia figure img, #pediatria figure img, #geriatria figure img, #psicologia figure img {
+    width: 300px;
+    height: 28vh;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#fisioterapia figure img {
+    width: 305px;
+    height: 33vh;
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
+
+#ortopedia table, #pediatria table, #geriatria table, #psicologia table, #fisioterapia table {
+    max-width: 1024px;
+    width: 100%;
+    height: 28vh;
+    margin-left: 0px;
+    border-collapse: collapse;
+    font-size: 18px;
+
+}
+
+#ortopedia table td, #pediatria table td, #geriatria table td, #psicologia table td, #fisioterapia table td {
+    padding: 10px;
+    margin-left: 100px;
+    min-width: 200px;
+
+}
+
+#ortopedia table tr:nth-child(2n+1), #pediatria table tr:nth-child(2n+1), #geriatria table tr:nth-child(2n+1), #psicologia table tr:nth-child(2n+1), #fisioterapia table tr:nth-child(2n+1) {
+    background-color: lightgray;
+}
+
+#ortopedia table th, #pediatria table th, #geriatria table th, #psicologia table th, #fisioterapia table th {
+    background-color: hsl(182, 100%, 41%);
+    padding: 12px 0px;
+    padding-left: 8px;
+    text-align: left;
+    color: white;
+}
+
+@media (max-width: 425px) {
+    #ortopedia table td, #pediatria table td, #geriatria table td, #psicologia table td, #fisioterapia table td {
+        min-width: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    #ortopedia figure img, #pediatria figure img, #fisioterapia figure img, #geriatria figure img, #psicologia figure img {
+        display: none;
+    }
+}
