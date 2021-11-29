@@ -1,0 +1,68 @@
+.imgFundo{
+    background-image: url("/assets/img-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 200px;
+}
+
+.quartos{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+#quarto_solteiro, #quarto_casal, #quarto_familia{
+    margin: 30px 50px;
+    height: 200px;  
+}
+
+#quarto_solteiro h1, #quarto_casal h1, #quarto_familia h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}   
+
+#quarto_solteiro p, #quarto_casal p, #quarto_familia p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.fotos_solteiro, .fotos_casal, .fotos_familia{
+    padding-left: 80px;
+}
+
+.fotos_solteiro img , .fotos_casal img, .fotos_familia img{
+    padding-left: 5px;
+    padding-bottom: 50px;
+    width: 300px;
+    height: 200px;
+}
+
+.info_solteiro h2 , .info_casal h2, .info_familia h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 30px;
+}
+.info_solteiro ul , .info_casal ul, .info_familia ul{
+    display: flex;   
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    max-width: 1024px;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.info_solteiro ul li , .info_casal ul li, .info_familia ul li{
+    margin-right: 80px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
